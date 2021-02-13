@@ -19,3 +19,87 @@
 #     If not, see <https://www.gnu.org/licenses/>.
 
 
+####################################(Welcome)###################################
+#License Function --WIP--
+    #print license w/ ctrl+w option
+
+#Welcome Screen / Abstract Function --WIP--
+    #print outline/abstract
+
+################################(Precheck Logic)################################
+#Settings.txt Integrity&Validation Function (bool) --FINISHED--
+    #is there a settings file?
+        #if yes:
+            #is file modified?
+                #if yes:
+                    #Proper keys and key values (compare from hidden)?
+                        #if no:
+                            #Open up read only copy of settings.txt from hidden
+                            #for comparison and inform the user that 
+                            #styles need to match and they need to save the
+                            #document
+                            #return false
+                        #if yes:
+                            #return true
+                #if no:
+                    #open up file and remind them to save & close... 
+                    #...it once they are done filling in the blanks
+                    #return false
+        #if no, copy from hidden then:
+            ##open up file and remind them to save & close... 
+            #...it once they are done filling in the blanks
+            #return false
+         
+#User Programs Check (Necessary?) --WIP--
+    #Check for default .pdf editor
+        #if none sumatraPDF
+    #Check for default word processor
+        #if noone
+    #Is it possible to do both of these in the browser? 
+    #Word Processor Check
+        # ?) Function to find default word processor?
+        # *) If no, gather list of most popular and reference them internally
+    #PDF Reader Check
+        # ?) Function to find default PDF reader? 
+        # *) If no, gather list of most popular and reference them internally
+
+#Template Integrity&Validation Function (bool) --FINISHED--
+    #Are there files in Cover Letter templates?
+            #If one:
+                #Good file type?
+                    #if good:
+                        #continue
+                    #if bad:
+                        #Warn user of bad file type
+                        #restore default from hidden
+                        #Would you like to use default template? 
+                            #if yes:
+                                #return true
+                            #if no:
+                                #print please pick compatible file type
+                                #and add it to Cover Letter Templates folder
+                                #**open folder for them too
+                                #pause program
+                                #return false
+                    #return True
+            #If multiple: #! Fix this logic for valid and invalid file types
+                #Retrive list based on valid file extensions
+                #Prompt user to pick desired file
+                #Would you like to make this your default? 
+                    #if yes:
+                        #Update settings.txt
+                    #This can be changed at any time by going to Settings.txt
+                    #return true 
+            #else: (no files case)
+                #Copy template from hidden
+                #Send warning of missing document
+                #Default template has been restored
+                #Would you like to use default template? 
+                    #if yes: 
+                        #return True
+                    #if no:
+                        #open cover letter templates
+                        #remind them file extensions
+                        #pause program
+                        #return false
+
