@@ -1,0 +1,22 @@
+Cover Letter Template Creation:
++) Find top examples of cover letters. 
++) Are there premade templates avaliable from public domain? 
++) Disect document success into most fields.
+    *) Ex: Hardskill, softskill, 
+
+About Company Information Research:
++) Develop/find method to pull company information.
+    *) Ex: Our History, About Us, News
++) In iterim, just open up company news in google
+
+Skill Parsing Model Research:
++) Research top job sites.
++) Research top aggregators.
++) Find Dataset containing full job descriptions
+    +) If no dataset, create datasets from top sites
++) Adjective heatmap?
+
+Word Synonyms/Equivalencies Research: 
++) Python Thesaurus Library?
+    !) Can be used in randomizing outputs
+    !) Can be used in sentiment~isq analysis

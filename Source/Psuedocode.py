@@ -1,7 +1,7 @@
 #!/user/bin/python3
 
 #     License Type: GNU General Public License v3.0
-#     'Cover Letter Generator', generates cover letters for use in job applications.
+#     'Cover Letter Generator', generates cover letters.
 #     Copyright (C) 2021 Matteo Capasso (matteo@capasso.dev)
 
 #     This program is free software: you can redistribute it and/or modify
@@ -19,14 +19,13 @@
 #     If not, see <https://www.gnu.org/licenses/>.
 
 
-####################################(Welcome)###################################
-#License Function --WIP--
-    #print license w/ ctrl+w option
+################################(Misc. Functions)###############################
+#License Function
+#Program Purpose Function
+#Clipboard Word Consolidator
 
-#Welcome Screen / Abstract Function --WIP--
-    #print outline/abstract
-
-################################(Precheck Logic)################################
+#############################(Validation Functions)#############################
+#Program Up to Date
 #Settings.txt Integrity&Validation Function (bool) --FINISHED--
     #is there a settings file?
         #if yes:
@@ -48,8 +47,7 @@
         #if no, copy from hidden then:
             ##open up file and remind them to save & close... 
             #...it once they are done filling in the blanks
-            #return false
-         
+            #return false       
 #User Programs Check (Necessary?) --WIP--
     #Check for default .pdf editor
         #if none sumatraPDF
@@ -62,7 +60,6 @@
     #PDF Reader Check
         # ?) Function to find default PDF reader? 
         # *) If no, gather list of most popular and reference them internally
-
 #Template Integrity&Validation Function (bool) --FINISHED--
     #Are there files in Cover Letter templates?
             #If one:
@@ -102,4 +99,59 @@
                         #remind them file extensions
                         #pause program
                         #return false
+#Backup Folder Integrity&Validation Function (bool)
+
+########################(Document Manipulation Functions)#######################
+#Word Document to PDF Converter
+#CSV/Excel File Updater
+#Document Name Changer
+#Document Open
+
+########################(Backup & Compression Functions)########################
+#Last Backup Compression Date Checker
+
+####################################(Main Body)#################################
+#print(License Function String)
+#print(Project Purpose Function String)
+#pause
+#Last Backup Date Retrival from Resources.json
+    #compress files
+    #record compression date
+#Main Loop
+    #Clear Terminal
+    #Print Welcome Message
+        #This program uses text and your clipboard (copy and paste)
+    #Clipboard Check Input Loop
+        #Please copy clip board
+        #Type hotkeys for Windows, Linux, and Apple
+        #pause
+        #Retrive Clipboard
+        #Paste part of clipboard to screen (use function from old project)
+        #Does this look like the text? 
+            #if yes
+                #Subloop exit condition
+    #! Analyze clipboard text
+    #Make copy of template to generated folder
+    #Fill generated document in generated with text and WIP name
+    #Open .doc to user, make changes obvious and easy to go through w/ fields
+    #User Input Validation Loop
+        #Parse new document to ensure fields have been changed
+            #if changed
+                #break / exit condition
+            #if not changed
+                #notify user they missed a field
+                #open document if not already open
+                #pause
+    #Remove WIP from document name
+    #Create PDF of the document
+    #Update CSV/Excel File with information
+    #Copy pdf, .doc, and csv to backup folder
+
+
+    
+
+    
+
+
+
 
