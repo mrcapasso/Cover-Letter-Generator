@@ -1,0 +1,6 @@
+#################################(Settings.txt)#################################
+Name = Matteo
+Hard Skills = 'Python, Microsoft Office, Typing'
+Soft Skills = 'Typing kind of fast, eating lots of cookies, and walking dogs.'
+Backup Directory = 
+Backup Compression = TRUE
