@@ -1,3 +1,11 @@
+Remove print statements from Validation function
+
+Pre-existing solutions?:
++) Compression
++) Thesaurus 
++) SimpleGUI
++) Word to PDF
+
 Cover Letter Template Creation:
 +) Find top examples of cover letters. 
 +) Are there premade templates avaliable from public domain? 
@@ -20,3 +28,7 @@ Word Synonyms/Equivalencies Research:
 +) Python Thesaurus Library?
     !) Can be used in randomizing outputs
     !) Can be used in sentiment~isq analysis
+
+**Look into 'Context Managers' when doing file I/O
+**zip function lets us loop over two lists at once
+**implement '__init__' into modules
